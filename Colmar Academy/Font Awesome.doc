@@ -1,0 +1,47 @@
+
+from the Bootstrap website;
+https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+
+From Codecademy
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+In the example above, the <link> tag is used to reference (href) font-awesome.css,
+ stored on a Bootstrap CDN server. The rel and type values indicate the file is a CSS stylesheet.
+ 
+------------------- 
+
+ When linking to a local version of Font Awesome, you should download the most up-to-date file. 
+ The Font Awesome css file can then be added to the current project directory. 
+ The <link> tag is used to reference the Font Awesome CSS file.
+ 
+ <head>
+  <link rel="stylesheet" type="text/css" href="resources/css/font-awesome.css">
+</head>
+
+--------------------------------
+
+Add Font Awesome Icon
+<i class="fa fa-save"></i>
+
+In the example above, the <i> tag's class is fa fa-save. 
+The fa class is required for all Font Awesome icon elements. 
+It provides standard size and display values for the icon, 
+without which, the icon would not appear properly. 
+The fa-save class references the floppy disc image. 
+If Font Awesome is correctly loaded in the head of the document, 
+the floppy disc icon will appear on the HTML page.
+
+
+----------------------
+Icon Sizing
+
+<i class="fa fa-camera fa-lg"></i>
+<i class="fa fa-cab fa-4x"></i>
+
+In the example above, the fa-lg and fa-4x classes will make their respective icons appear larger.
+The first line instructs the browser to display a camera icon (fa-camera) that is 33% larger (fa-lg) than the default size. 
+The second line instructs the browser to add a cab icon (fa-cab) that is four times larger (fa-4x) than the default.

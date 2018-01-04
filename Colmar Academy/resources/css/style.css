@@ -1,0 +1,597 @@
+/* Universal Styles */
+
+html {
+  font-family: 'Amiko', sans-serif;
+  font-family: 'Montserrat', sans-serif;    
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 4rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+  }
+}
+
+/* ------ Header ----- */
+
+header {
+  position: fixed;
+  z-index: 10;
+  display: flex    
+  margin: auto;
+  flex-direction: row;    
+  width: 100%;
+  height: 4rem;
+  background-color: cyan;
+  border-bottom: 1px solid cyan;    
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}   
+    
+.logo {
+    padding-left: 1.5rem;
+    padding-right: .5rem;
+    align-self: center;
+    height: 2rem;
+}
+
+.logo img {
+    height: 100%;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.title h2 {
+    font-weight: 700;
+}
+
+.title #acad {
+    color:dodgerblue;
+}
+    
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+    
+header .container {
+    display: none;
+    }
+    
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 1rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+}
+
+/* ----- end of header ----*/
+
+
+/* -------Banner 1 - Learn Something------*/
+
+.banner {
+  display: flex;
+  padding: 2rem 0;    
+ }
+
+#first {
+    background-color: aquamarine;
+}
+
+.banner .left {
+    width: 60%;
+    padding: 0 1.5rem;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    height: auto;
+    width:100%;  
+}   
+
+#first .right-1 {
+  justify-content: center;
+}
+
+.banner .right-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 1.5rem;
+}
+
+#first h1 {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#first h2 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%;
+    min-height: 2rem; 
+}
+
+.right-1 .button {
+    padding: .5rem 0;
+}
+
+
+/********** first banner media ********/
+
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner .left{
+    width: 100%;
+    padding: 0;
+  }
+
+.banner .right-1 {
+    width:inherit;
+    padding-right: 0;
+    
+  } 
+    
+#first h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}    
+    
+#first h2 {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    }
+ 
+.button {
+    min-height: 2rem;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    }
+}
+
+
+/****** banner 2 left side *******/
+
+
+#second {
+    background-color: whitesmoke;
+}
+
+#second .left .text h1 {
+    margin-top: 2rem;
+}
+    
+#second .left .text p {
+    margin-top: 1.5rem;
+}
+
+p {
+    font-family: Source Sans Pro;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+    color: darkgray;
+}
+
+#second .left .text .author {
+    font-size: .8rem;
+    color: black;
+}
+
+
+
+/****** banner 2 right side *******/
+
+#second .right-side {
+  flex-direction: column;
+  width: 40%;
+  display: flex;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    display: flex;
+}
+
+.container-1 .img-container {
+    width: 35%;
+    padding-top: 0; 
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.container-2 .img-container {
+    width: 35%;
+    padding: 1rem 0 1rem 1rem; 
+}
+
+.container-3 .img-container {
+    width: 35%;
+    padding: 1rem 0 1rem 1rem; 
+}
+
+.container-1 img,
+.container-2 img,
+.container-3 img {
+    width: 100%;
+    height: auto;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    overflow: hidden;
+}
+
+.text-1 {
+    width: 65%; 
+    margin: auto;
+    padding-left: 1rem;
+    
+}
+
+.text-1 .read {
+    color: dodgerblue;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.text-1 h2 {
+    font-weight: bold;
+}
+.container-3 {
+    background-color: aqua;
+}
+
+#orientation, #campus, #guest {
+    display: none;
+}
+
+
+/********** second banner media ********/
+
+
+@media only screen and (max-width: 480px) {
+ 
+.container-1 img,
+.container-2 img,
+.container-3 img {
+    display: none;
+}
+    
+    #second .right-side {
+  width: 100%;
+}
+
+    .container-1 .image-container {
+        width: 100%;
+        padding: 0;
+    }
+    #orientation, #campus, #guest {
+        display: block;
+        width: 100%;
+}
+    #second .left {
+        display: none;
+    }
+}
+
+
+/************  start-learning    *******/
+
+  
+
+#start-learning {
+    width:100%;
+    background-color: aquamarine;
+}
+
+#start-learning .content {
+    text-align: center;
+    width: 100%;
+    
+}
+
+#start-learning .content h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-top: 2rem;
+}
+
+#start-learning .banner {
+    flex-wrap: wrap;
+    padding: 1rem 4.5rem;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+
+.course-container .title {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.course-container .text {
+    padding-left: 1rem;
+}
+
+#start-learning .courses {
+    color: darkblue;
+    font-weight: 700;
+}
+
+#start-learning .banner {
+    flex-wrap: wrap;
+    padding: 1rem 4.5rem;
+}
+
+/************  start-learning   media *******/
+
+@media only screen and (max-width: 480px) {
+ 
+ .banner .image-container img {
+    display: none;
+}
+    
+.course-container .text {
+    display: none;
+}
+    
+.course-container .title {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+    #start-learning {
+    background-color: gainsboro;
+}
+    
+.course-container {
+    background-color: aquamarine;
+    margin: 0.25rem 1rem;
+} 
+    
+#start-learning .content{
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+    
+#start-learning .banner {
+    padding: 0;
+    padding-bottom: 2rem;
+}    
+ 
+}
+
+
+
+
+/************  Thesis exhibit *******/
+
+#thesis {
+    background-color: whitesmoke;
+}    
+
+.banner-title {
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+    background-color: whitesmoke;
+}
+
+.video-container {
+    width: 100%;
+}
+.video-container video {
+    width: inherit;
+}
+#thesis .banner .text-1 {
+    width: 100%;
+  }
+
+#thesis .left .text-1 p {
+    margin-top: 0.5rem;
+}
+
+p {
+    font-family: Amiko;
+    opacity: 0.5;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+}
+.banner .right-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info-container .image-container {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+.image-container {
+    overflow: hidden;
+}
+
+.info-container .right-text {
+    justify-content: center;
+    width: 65%;
+    font-weight: bold;
+}
+
+.banner .right-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+/************Media  Thesis exhibit *******/
+
+@media only screen and (max-width: 480px) {  
+    
+.banner .left{
+    width: 100%;
+    padding: 0;
+  }
+    
+
+ #thesis .banner-title {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: whitesmoke;
+}
+
+    
+#thesis .banner {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }    
+        
+#thesis .banner .left .text-1{
+     display: none;
+}
+    
+.banner .right-mobile {
+     display: none;
+}    
+}
+
+
+
+/*------ Footer ------*/
+
+footer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.legal {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+}
+
+
+/*------ Footer media ------*/
+
+
+@media only screen and (max-width: 480px) {
+  footer .copyright {
+    font-size: 0.8rem;
+      padding: 1rem auto;
+  }
+    footer .legal {
+        display: none;
+    }
+}
